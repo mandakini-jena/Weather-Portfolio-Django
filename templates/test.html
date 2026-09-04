@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+<center>
+    
+    <h1>My calculator</h1>
+    <form method="POST">
+        
+       {% csrf_token %}
+        <label>enter first number</label>
+        <input type="number" name="n1">
+        <br><br>
+        <label>enter second number</label>
+        <input type="number" name="n2">
+        <br><br>
+        <input type="submit" name="btn" value="submit">
+        <br><br>
+        <label>{{total}}</label>
+        
+    </form>
+    </center>
+</body>
+</html>
